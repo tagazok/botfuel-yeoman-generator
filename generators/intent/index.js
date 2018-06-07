@@ -21,7 +21,9 @@ module.exports = class extends Generator {
   }
 
   initializing() {
-    this.composeWith('botfuel:view', {arguments: [this.options.name]});
-    this.composeWith('botfuel:dialog', {arguments: [this.options.name, ...this.options.entities]});
+    this.composeWith('botfuel:view', { arguments: [this.options.name] });
+    this.composeWith('botfuel:dialog', {
+      arguments: [this.options.name, ...(this.options.entities || '')]
+    });
   }
 };

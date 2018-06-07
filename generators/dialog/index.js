@@ -18,9 +18,9 @@ module.exports = class extends Generator {
       required: false,
       description: 'Entities'
     });
-    
-    this.option('type', {
-      desc: "Dialog type",
+
+    this.option('dialogType', {
+      desc: 'Dialog type',
       type: String,
       required: false,
       default: 'Prompt'
@@ -30,10 +30,8 @@ module.exports = class extends Generator {
     let [firstLetter, ...letters] = this.options.name;
     this.dialogName = `${firstLetter.toUpperCase()}${letters.join('')}`;
 
-    this.promptType = this.options.prompt.toLowerCase();
+    this.promptType = this.options.dialogType.toLowerCase();
 
-
-    
     if (!['void', 'base', 'default', 'qna', 'confirmation'].includes(this.promptType)) {
       this.promptType = 'default';
     }
@@ -41,12 +39,11 @@ module.exports = class extends Generator {
     [firstLetter, ...letters] = this.promptType;
     this.promptType = `${firstLetter.toUpperCase()}${letters.join('')}`;
 
-
-    this.entitiesJSON = {}
+    this.entitiesJSON = {};
     if (this.options.entities) {
       console.log(this.options.entities);
       for (let entity of this.options.entities) {
-        entity = entity.split(':')
+        entity = entity.split(':');
         this.entitiesJSON[entity[0]] = { dim: entity[1] };
       }
     }

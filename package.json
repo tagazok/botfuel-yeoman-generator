@@ -1,6 +1,6 @@
 {
   "name": "generator-botfuel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create chatbots using Botfuel sdk",
   "homepage": "",
   "author": {
@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "chalk": "^2.1.0",
+    "git-clone-or-pull": "^3.1.1",
     "yeoman-generator": "^2.0.1",
     "yosay": "^2.0.1"
   },

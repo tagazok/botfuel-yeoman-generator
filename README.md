@@ -22,7 +22,7 @@ yo botfuel
 Generate a new Dialog with built-in entities. Default type is 
 prompt :
 ```bash
-	yo botfuel:dialog travel [location:city date:time] [--type={void, base, default, qna, confirmation, prompt}]
+	yo botfuel:dialog travel [location:city date:time] [--type=void|base|default|qna|confirmation|prompt]
 ```
 Generate a new View :
 ```bash
