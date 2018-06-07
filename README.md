@@ -1,5 +1,5 @@
-# generator-botfuel [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Create chatbots using Botfuel sdk
+# Botfuel Yeoman Generator
+Creating chatbots using Botfuel made easy
 
 ## Installation
 
