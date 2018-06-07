@@ -7,7 +7,7 @@ First, install [Yeoman](http://yeoman.io) and generator-botfuel using [npm](http
 
 ```bash
 npm install -g yo
-npm install -g botfuel-yeoman-generator
+npm install -g generator-botfuel
 ```
 
 <!-- Then generate your new project:

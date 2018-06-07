@@ -1,6 +1,6 @@
 {
   "name": "generator-botfuel",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Create chatbots using Botfuel sdk",
   "homepage": "",
   "author": {
@@ -83,5 +83,5 @@
     ]
   },
   "repository": "tagazok/botfuel-yeoman-generator",
-  "license": "Apache-2.0"
+  "license": "MIT"
 }
