@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Olivier",
+      "authorEmail": "olivier@botfuel.io",
+      "authorUrl": ""
+    }
+  }
+}
